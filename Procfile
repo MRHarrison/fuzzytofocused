@@ -1,1 +1,2 @@
-web: gunicorn fuzzytofocused:app -b 0.0.0.0:$PORT -w 3
+web: python manage.py run
+# web: gunicorn fuzzytofocused:app -b 0.0.0.0:$PORT -w 3
