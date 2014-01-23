@@ -43,6 +43,14 @@ class DefaultConfig(BaseConfig):
     # MYSQL for production.
     #SQLALCHEMY_DATABASE_URI = 'mysql://username:password@server/db?charset=utf8'
 
+    # -----> PostgreSQL container created: postgresql/fuzzytofocused
+
+    #        Host: 172.17.42.1
+    #        Port: 49153
+    #        User: 'root'
+    #        Password: 'IOHRRM3uhlb0rwSr'
+    #        Database: 'db'
+    
     # Flask-babel: http://pythonhosted.org/Flask-Babel/
     ACCEPT_LANGUAGES = ['zh']
     BABEL_DEFAULT_LOCALE = 'en'
@@ -66,6 +74,7 @@ class DefaultConfig(BaseConfig):
     # Flask-openid: http://pythonhosted.org/Flask-OpenID/
     OPENID_FS_STORE_PATH = os.path.join(INSTANCE_FOLDER_PATH, 'openid')
     make_dir(OPENID_FS_STORE_PATH)
+
 
 
 class TestConfig(BaseConfig):
