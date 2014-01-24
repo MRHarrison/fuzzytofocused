@@ -48,9 +48,9 @@ class DefaultConfig(BaseConfig):
     #        Host: 172.17.42.1
     #        Port: 49153
     #        User: 'root'
-    #        Password: 'IOHRRM3uhlb0rwSr'
+    #        Password: 'QM1QahsrpcrwATWH'
     #        Database: 'db'
-    
+                  
     # Flask-babel: http://pythonhosted.org/Flask-Babel/
     ACCEPT_LANGUAGES = ['zh']
     BABEL_DEFAULT_LOCALE = 'en'
