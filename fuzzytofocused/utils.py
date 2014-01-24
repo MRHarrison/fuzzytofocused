@@ -97,7 +97,10 @@ def id_generator(size=10, chars=string.ascii_letters + string.digits):
 
 def make_dir(dir_path):
     try:
+        print dir_path
+        import pudb; pudb.set_trace()
         if not os.path.exists(dir_path):
+
             os.mkdir(dir_path)
     except Exception, e:
         raise e
