@@ -43,14 +43,14 @@ class DefaultConfig(BaseConfig):
     # MYSQL for production.
     #SQLALCHEMY_DATABASE_URI = 'mysql://username:password@server/db?charset=utf8'
 
-    # -----> PostgreSQL container created: postgresql/fuzzytofocused
+    # -----> PostgreSQL container created: postgresql/fuzzytofocused.com
 
     #        Host: 172.17.42.1
-    #        Port: 49153
+    #        Port: 49169
     #        User: 'root'
-    #        Password: 'QM1QahsrpcrwATWH'
+    #        Password: 'IZtIoUl5OGV0Woqb'
     #        Database: 'db'
-                  
+                         
     # Flask-babel: http://pythonhosted.org/Flask-Babel/
     ACCEPT_LANGUAGES = ['zh']
     BABEL_DEFAULT_LOCALE = 'en'
