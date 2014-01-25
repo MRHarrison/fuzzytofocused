@@ -3,7 +3,7 @@
 	url = https://github.com/MRHarrison/d3.git
 [submodule "fuzzytofocused/static/lib/bootstrap"]
 	path = fuzzytofocused/static/lib/bootstrap
-	url = https://github.com/MRHarrison/bootstrap-1.git
+	url = https://github.com/twbs/bootstrap.git
 [submodule "fuzzytofocused/static/lib/bootstrap-angular"]
 	path = fuzzytofocused/static/lib/bootstrap-angular
 	url = https://github.com/angular-ui/bootstrap.git
