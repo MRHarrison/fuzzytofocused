@@ -1,0 +1,15 @@
+[submodule "fuzzytofocused/static/lib/d3"]
+	path = fuzzytofocused/static/lib/d3
+	url = https://github.com/MRHarrison/d3.git
+[submodule "fuzzytofocused/static/lib/bootstrap"]
+	path = fuzzytofocused/static/lib/bootstrap
+	url = https://github.com/twbs/bootstrap.git
+[submodule "fuzzytofocused/static/lib/bootstrap-angular"]
+	path = fuzzytofocused/static/lib/bootstrap-angular
+	url = https://github.com/angular-ui/bootstrap.git
+[submodule "fuzzytofocused/static/lib/angular"]
+	path = fuzzytofocused/static/lib/angular
+	url = https://github.com/MRHarrison/angular.js.git
+[submodule "bootstrap-angular"]
+	path = bootstrap-angular
+	url = https://github.com/angular-ui/bootstrap.git
