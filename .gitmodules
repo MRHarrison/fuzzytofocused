@@ -10,3 +10,6 @@
 [submodule "fuzzytofocused/static/lib/angular"]
 	path = fuzzytofocused/static/lib/angular
 	url = https://github.com/MRHarrison/angular.js.git
+[submodule "bootstrap-angular"]
+	path = bootstrap-angular
+	url = https://github.com/angular-ui/bootstrap.git
