@@ -22,8 +22,6 @@ body {
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
-    
-    margin-top: 70px;
 }
 
 /* Titles */
@@ -90,7 +88,7 @@ a:after {
 .navbar {
 	font-weight: 800;
 	font-size: 14px;
-	padding-top: 15px;
+	padding-top: 10px;
 	padding-bottom: 15px;
 	background-color: #ffffff;
 }
@@ -101,9 +99,7 @@ a:after {
 }
 
 .navbar-brand {
-	font-size: 60px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	font-size: 50px;
 }
 
 .btn-theme {
@@ -129,8 +125,8 @@ a:after {
 /* hello */
 #hello {
 	width: 100%;
-	padding-top: 250px;
-	padding-bottom: 250px;
+	padding-top: 75px;
+	padding-bottom: 75px;
 }
 
 #hello h1 {
