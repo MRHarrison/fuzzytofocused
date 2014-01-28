@@ -3,11 +3,12 @@
 
   angular.module('fuzzytofocused.controllers')
     .controller('portfolio', ['$scope', function($scope){
-      $scope.title = "Portfolio";
       $scope.d3Portfolio = [
-        {name: "Greg", score:98},
-        {name: "Ari", score:96},
-        {name: "Loser", score: 48}
+        {name: "Python", score:25},
+        {name: "Memcache", score: 15},
+        {name: "Postgresql", score: 20},
+        {name: "Mongo", score: 10},
+        {name: "Javascript", score:35},
       ];
     }]);
 

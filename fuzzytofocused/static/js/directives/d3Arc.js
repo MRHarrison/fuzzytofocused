@@ -13,7 +13,7 @@
         link: function(scope, iElement, iAttrs) {
 
           var svg = d3.select(iElement[0]).append("svg")
-              .attr('height', 500)
+              .attr('height', 700)
               .append("g");
 
           // on window resize, re-render d3 canvas
@@ -38,28 +38,50 @@
             svg.selectAll("*").remove();
             // setup variables
             var width, height, max, τ;
+            var color = d3.scale.category20();
+
             width = d3.select(iElement[0])[0][0].offsetWidth - 20;
-            height = 500;
+            height = 700;
             τ = 2 * Math.PI; // http://tauday.com/tau-manifesto
             // set the height based on the calculations above
+            data.forEach(function(d) {
+                d.score = +d.score;
+            });
+
             svg.attr('width', width)
               .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
             var arc = d3.svg.arc()
-                      .innerRadius(180)
-                      .outerRadius(240)
-                      .startAngle(0);
-            // Add the background arc, from 0 to 100% (τ).
-            var background = svg.append("path")
-                .datum({endAngle: τ})
-                .style("fill", "#ddd")
-                .attr("d", arc);
+                      .innerRadius(250)
+                      .outerRadius(320);
 
-            // Add the foreground arc in orange, currently showing 12.7%.
-            var foreground = svg.append("path")
-                .datum({endAngle: 0.127 * τ})
-                .style("fill", "orange")
-                .attr("d", arc);
+            var pie = d3.layout.pie()
+                .sort(null)
+                .value(function(d) { 
+                    console.log(d)
+                    return d.score; });
+
+            var g = svg.selectAll(".arc")
+                .data(pie(data))
+                .enter().append("g")
+                .attr("class", "arc");  
+
+            g.append("path")
+                  .attr("d", arc)
+                  .style("fill", function(d) { return color(d.value); });
+
+            g.append("text")
+                  .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
+                  .attr("dy", ".35em")
+                  .style("text-anchor", "middle")
+                  .text(function(d) { return d.data.name; });
+
+            g.append("text")
+                  .attr("dy", ".35em")
+                  .attr("class", "h3")
+                  .style("text-anchor", "middle")
+                  .text(function(d) { return 'Matthew Harrison Full Stack Engineer' });
+
 
           };
         }
